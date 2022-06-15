@@ -1,0 +1,22 @@
+<div class="nav-wrapper">
+
+    <a href=" {% url 'home' %} ">
+        <div class="dots-wrapper">
+            Home
+        </div>
+    </a>
+
+
+    <ul id="navigation">
+        <li><a href=" {% url 'home' %}#contact ">Contact</a></li>
+        <li><a>|</a></li>
+        {% if request.user.is_authenticated %}
+            <li><a href=" {% url 'create_post' %} ">   Create Post</a></li>
+            <li><a>|</a></li>
+            <li><a href=" {% url 'logout'%}">Log Out</a></li>
+            <li><a>|</a></li>
+        {% endif %}
+
+        <li><a href="{% url 'admin:index' %}">Admin</a></li>
+    </ul>
+</div>

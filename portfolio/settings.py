@@ -23,11 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-8s32omb2kb(nmy3&q7j!l^yq1+8$1_y1-ij9pw*)pzw2tusu97'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
+***HIDDEN***
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.mysite.com', 'myportfolio970913.herokuapp.com']
 
@@ -143,11 +139,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'maciasz.jakub@gmail.com'
-EMAIL_HOST_PASSWORD = 'gmrplkkgjitzmuxv'
+***HIDDEN***
 
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
@@ -167,10 +159,4 @@ django_on_heroku.settings(locals())
 
 #S3 BUCKETS CONFIG
 
-AWS_ACCESS_KEY_ID = 'AKIAVGV67HQG5BAHH4Y5'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'jakubmaciasz1'
-
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+***HIDDEN***
